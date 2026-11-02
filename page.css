@@ -1,0 +1,17 @@
+/* TableSearch — the only style added to the Google page: the "Show" highlight. */
+.tablesearch-flash {
+  outline: 3px solid #4a7cf7 !important;
+  outline-offset: 4px !important;
+  animation: tablesearch-pulse 2.2s ease-out 1 !important;
+}
+
+/* Docked mode: the page gives up the panel's width. --ts-dock-w is set from script. */
+html.tablesearch-docked {
+  width: calc(100% - var(--ts-dock-w, 0px)) !important;
+}
+
+@keyframes tablesearch-pulse {
+  0%   { outline-color: rgba(74, 124, 247, 1); }
+  70%  { outline-color: rgba(74, 124, 247, 1); }
+  100% { outline-color: rgba(74, 124, 247, 0); }
+}
