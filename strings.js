@@ -20,7 +20,7 @@ var S = {
   full:                'Full',
 
   // Table Options
-  tableOptions:        'Table Options',
+  tableOptions:        'Settings',
 
   sectionDisplay:      'Display',
   highlightMatches:    'Highlight Matches',
@@ -35,7 +35,7 @@ var S = {
   gripLabel:           'Resize the table (drag, or use the arrow keys)',
 
   // One-time notice, shown the first time the table opens by itself
-  introText:           'The table now opens automatically on Google results. Esc hides it and Alt+T brings it back. You can change this any time in Table Options.',
+  introText:           'The table now opens automatically on Google results. Esc hides it and Alt+T brings it back. You can change this any time in Settings.',
   introKeep:           'Keep automatic',
   introOff:            'Turn off automatic',
   sectionLegend:       'Legend for highlights',

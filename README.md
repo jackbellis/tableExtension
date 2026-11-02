@@ -27,7 +27,7 @@ It reads the results Google has already sent to your browser. There is no accoun
 7. Click **Load 20 more results** for the next two Google pages, fetched the same way your browser would. It stops around 54 results.
 8. Press **Esc** or **×** to close.
 
-**Compact / Standard / Full** pick a set of columns. **Table Options** has the column checklist, the highlight switch, and **Open the table automatically**, which shows the table on every results page without pressing anything. Column widths (drag a header edge), columns, density and options are remembered.
+**Compact / Standard / Full** pick a set of columns. **Settings** has the column checklist, the highlight switch, and **Open the table automatically**, which shows the table on every results page without pressing anything. Column widths (drag a header edge), columns, density and options are remembered.
 
 ## What it sorts by
 

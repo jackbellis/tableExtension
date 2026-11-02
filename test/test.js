@@ -188,7 +188,7 @@ const check = (name, ok, detail = '') => { results.push({ name, ok: !!ok, detail
   await page.screenshot({ path: path.join(SP, 'shot3-full.png') });
 
   // Options popover: toggle highlight off
-  await page.locator('#tablesearch-host .controls .btn', { hasText: 'Table Options' }).click();
+  await page.locator('#tablesearch-host .controls .btn', { hasText: 'Settings' }).click();
   check('options popover opens', await page.locator('#tablesearch-host .pop').isVisible());
   await page.locator('#tablesearch-host .pop label', { hasText: 'Highlight Matches' }).click();
   check('highlight off removes row tint', (await page.locator('#tablesearch-host tbody tr.exact-match, #tablesearch-host tbody tr.close-match').count()) === 0);
@@ -254,7 +254,7 @@ const check = (name, ok, detail = '') => { results.push({ name, ok: !!ok, detail
   check('header has dark-gray dividers between columns', /^1px rgb\((1[0-4]\d|[5-9]\d), /.test(divider.second) && divider.first === '0px', JSON.stringify(divider));
 
   // Turning automatic off from Table Options sticks across reloads
-  await page.locator('#tablesearch-host .controls .btn', { hasText: 'Table Options' }).click();
+  await page.locator('#tablesearch-host .controls .btn', { hasText: 'Settings' }).click();
   await page.locator('#tablesearch-host .pop label', { hasText: 'Open the table automatically' }).locator('input').uncheck();
   await page.keyboard.press('Escape');
   await page.reload();
